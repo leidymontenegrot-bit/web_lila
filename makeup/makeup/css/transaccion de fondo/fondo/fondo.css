@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: antiquewhite;
+}
+.animacion{
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    animation: accesorios 10s linear infinite;
+}
+@keyframes accesorios{
+    0%{background-image: url("./img/ACCESORIOS.jpg");}
+    30%{background-image: url("./img/accesorios2.webp");}
+    60%{background-image: url("./img/accesorios3.jpg");}
+    100%{background-image: url("./img/accesorios4.jpg");}
+}

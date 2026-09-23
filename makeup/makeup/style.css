@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: #F6EBF3;/*fondo*/
+    display: flex;
+    flex-direction:row;
+    background-image: url("./img/FONDOwatercolor-background-texture-soft-pink-and-gold-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Logo{
+    height: 200px;
+    padding: 1px;
+    filter: drop-shadow(15px 15px 25px #8B5CF6);/*la sombra*/
+}
+nav{
+    width: 200%;
+    padding-right: 3%;
+}
+.Titulos{
+    font-family: "Sekuya", system-ui;
+    font-size: 60px;
+    color:hsl(296, 99%, 31%);
+    font-weight: 510;
+    margin-top:30px;
+    text-shadow:10px 10px 20px hsl(260, 70%, 84%);
+    
+    
+}
+ul{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;/*tamaño de letra*/
+    display: flex;
+    flex-direction: row;      
+    justify-content: flex-end;
+    gap: 20px;/*el espacio entre elementos*/
+    list-style:none;
+    font-weight: bold;
+    margin-top:-5px;
+    a{/*seudoclases*/
+        li{
+            color: hsl(296, 99%, 31%);
+        }
+    }
+}
+.TitulosC{
+    font-family: "Sekuya", system-ui;
+    font-size: 60px;
+    color:hsl(296, 99%, 31%);
+    font-weight: 500;
+}
+.Seccion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Articulos{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#Ropa{
+    width: 250px;
+    height: 260px;
+    float: left;
+}
+#Maquillaje{
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+#Accesorios{
+    width: 250px;
+    height: 260px;
+    float: left;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+    background-color:hsl(296, 99%, 31%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;   
+    background-image: url("./imagenes/special.jpg");
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.social-icons ion-icon {
+    font-size: 32px;
+    color:hsl(296, 99%, 31%);
+    transition: transform 0.2s ease;
+}
+.social-icons ion-icon:hover {
+    transform: scale(1.2);
+    color: #E7DFF7;
+}
+body{
+    background-image: url("./imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#ff6ff1(55,81,104);
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin:20px;
+}
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspectve(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #DA83D5;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color:#070707;
+    background:#222(0,0,0,.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px)rotateY(100deg);
+    background:#fff(128,163,183);
+    padding:15px;
+    color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #222;
+}
+.card .back .link{
+    border-top: solid 1px #fff;
+    height: 50px;
+    line-height:50px;
+    color:beige;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back .p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform:perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform:perspective(600px) rotateY(360deg);
+}

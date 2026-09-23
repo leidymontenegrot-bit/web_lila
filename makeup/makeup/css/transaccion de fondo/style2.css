@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: cornsilk;
+    text-align: center;
+}
+.text{
+    font-family: "Sekuya", system-ui;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: url(./img/accesorios.jfif);
+    background-size: cover;
+    background-position: 0,0;
+    background-clip: text;
+    color: transparent;
+    animation: meakep 10s linear infinite;
+
+}
+@keyframes meakep{
+    to{
+        background-position-x: 200px ;
+    }
+}
